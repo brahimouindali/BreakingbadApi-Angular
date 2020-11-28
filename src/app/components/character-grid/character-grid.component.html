@@ -1,0 +1,8 @@
+<Spinner *ngIf="!isLoading"></Spinner>
+
+<section class='cards' *ngIf="isLoading">
+  <div class="card" *ngFor="let character of characters">
+    <CharacterItem [character]=character></CharacterItem>
+  </div>
+
+</section>

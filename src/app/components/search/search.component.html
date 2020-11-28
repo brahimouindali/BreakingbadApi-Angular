@@ -1,0 +1,13 @@
+<section class='search'>
+    <form>
+      <input
+        type='text'
+        class='form-control'
+        placeholder='Search characters'
+        autoFocus
+        [(ngModel)]="query"
+        name="query"
+        (keyup)="onKeyUp($event)"
+        />
+    </form>
+  </section>
